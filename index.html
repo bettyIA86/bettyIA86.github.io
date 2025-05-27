@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi sitio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empresa de Transporte</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>¡Hola desde GitHub Pages!</h1>
-  <p>Este sitio está funcionando correctamente.</p>
+  <header>
+    <h1>Transporte Express</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenidos a Transporte Express</h2>
+    <p>Ofrecemos soluciones confiables y rápidas para el transporte de carga.</p>
+  </section>
+
+  <section id="objetivo">
+    <h2>Nuestro Objetivo</h2>
+    <p>Brindar un servicio de transporte seguro, eficiente y puntual a todos nuestros clientes.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicio">
+      <img src="https://via.placeholder.com/300x200?text=Carga+Seca" alt="Carga Seca">
+      <h3>Carga Seca</h3>
+      <p>Transporte de mercancías sin requerimientos de temperatura específica.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://via.placeholder.com/300x200?text=Carga+Refrigerada" alt="Carga Refrigerada">
+      <h3>Carga Refrigerada</h3>
+      <p>Transporte con control de temperatura para productos perecederos.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://via.placeholder.com/300x200?text=Carga+al+Carb%C3%B3n" alt="Carga al Carbón">
+      <h3>Carga al Carbón</h3>
+      <p>Especializados en el transporte de carbón de manera segura.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctenos</h2>
+    <form id="form-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Transporte Express. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
